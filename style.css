@@ -1,0 +1,115 @@
+/* Default styles for larger screens */
+main {
+    background-color: white;
+    margin: 100px 400px;
+    border-radius: 30px;
+    display: flex;
+    box-shadow: 1.6em 1.4em 1.6em hsla(0, 0%, 0%, 0.05);
+    gap: 30px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    width: 600px;
+  }
+  /* Common styles for .react elements */
+  .react {
+    display: flex;
+    padding: 0 30px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .react p {
+    margin-right: 10px;
+  }
+  #ten {
+    color: gray; /* Set the text color of h4 elements to gray */
+  }
+  /* Background colors for .react elements */
+  #react { background-color: hsl(0, 77%, 95%); }
+  #mem { background-color: hsl(38, 58%, 94%); }
+  #vir { background-color: hsl(162, 76%, 97%); }
+  #vis { background-color: hsl(221, 100%, 96%); }
+  /* Default button styles */
+  button {
+    padding: 10px 10px;
+    margin: 30px 20px;
+    border-radius: 15px;
+    align-items: center;
+    background-color: hsl(241, 81%, 54%);
+    width: 210px;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    transition: background-color 0.3s; /* Add a smooth transition effect for background color */
+  }
+  /* Change button background color when hovering */
+  button:hover {
+    background-color: hsl(224, 30%, 27%);
+  }
+  /* Styles for .result div */
+  .result {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    text-align: center;
+    border-radius: 30px;
+    height: fit-content;
+    width: 300px;
+    padding: 20px;
+    margin-left: 30px;
+    color: hsl(0, 0%, 100%);
+  }
+  /* Styles for .summary div */
+  .summary {
+    padding-top: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    background-color: white;
+  }
+  /* Styles for .circle */
+  .circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .circle h1 {
+    padding-top: 40px;
+    margin: 0;
+  }
+  /* Media query for mobile phones (up to 375px) */
+  @media screen and (max-width: 375px) {
+    main {
+      flex-direction: column;
+      margin: 20px;
+      width: auto;
+    }
+    .result {
+      width: 250px;
+      margin: 0;
+    }
+    .summary {
+      padding-right: 0;
+    }
+    button {
+      width: 300px;
+      height: 50px;
+      background-color: hsl(224, 30%, 27%);
+    }
+  }
+  /* Media query for tablets and smaller screens (up to 768px) */
+  @media screen and (max-width: 768px) {
+    main {
+      flex-direction: column;
+      margin: 20px;
+      width: auto;
+    }
+    .result {
+      width: 100%;
+      margin: 0;
+    }
+    .summary {
+      padding-right: 0;
+    }
+  }  
